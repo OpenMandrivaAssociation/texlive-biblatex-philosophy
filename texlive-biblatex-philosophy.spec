@@ -1,3 +1,9 @@
+# revision 22499
+# category Package
+# catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-philosophy
+# catalog-date 2011-05-16 15:49:49 +0200
+# catalog-license lppl1.3
+# catalog-version 0.7c
 Name:		texlive-biblatex-philosophy
 Version:	0.7c
 Release:	1
@@ -59,6 +65,7 @@ some simple redefinitions.
 %doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/biblatex-philosophy.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/biblatex-philosophy.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/philosophy-examples.bib
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -69,3 +76,5 @@ some simple redefinitions.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
