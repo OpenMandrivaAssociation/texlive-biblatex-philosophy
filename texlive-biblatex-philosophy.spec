@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The packages offers two styles philosophy-classic and
@@ -31,20 +29,12 @@ conventions used in Italian publications, these styles can be
 used with every language recognized by babel, possibly with
 some simple redefinitions.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -66,7 +56,6 @@ some simple redefinitions.
 %doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/biblatex-philosophy.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/biblatex-philosophy.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/philosophy-examples.bib
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -77,5 +66,3 @@ some simple redefinitions.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
