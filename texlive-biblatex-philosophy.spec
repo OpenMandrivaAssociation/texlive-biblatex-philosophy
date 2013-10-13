@@ -1,11 +1,11 @@
-# revision 26219
+# revision 31550
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-philosophy
-# catalog-date 2012-05-05 15:20:56 +0200
+# catalog-date 2013-08-31 09:43:10 +0200
 # catalog-license lppl1.3
-# catalog-version 0.8b
+# catalog-version 0.9b
 Name:		texlive-biblatex-philosophy
-Version:	0.8b
+Version:	0.9b
 Release:	1
 Summary:	Styles for using biblatex for work in philosophy
 Group:		Publishing
@@ -13,6 +13,7 @@ URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/bibl
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-philosophy.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-philosophy.doc.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-philosophy.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -49,38 +50,21 @@ some simple redefinitions.
 %{_texmfdistdir}/tex/latex/biblatex-philosophy/philosophy-verbose.bbx
 %{_texmfdistdir}/tex/latex/biblatex-philosophy/philosophy-verbose.cbx
 %doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/README
-%doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/Test-philosophy-classic.tex
-%doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/Test-philosophy-modern.tex
-%doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/Test-philosophy-verbose.tex
-%doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/biblatex-philosophy.bib
 %doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/biblatex-philosophy.pdf
-%doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/biblatex-philosophy.tex
+%doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/philosophy-examples.bib
+%doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/test-classic.tex
+%doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/test-modern.tex
+%doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/test-verbose.tex
+#- source
+%doc %{_texmfdistdir}/source/latex/biblatex-philosophy/biblatex-philosophy.bib
+%doc %{_texmfdistdir}/source/latex/biblatex-philosophy/biblatex-philosophy.dtx
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%setup -c -a0 -a1 -a2
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.8b-1
-+ Revision: 804496
-- Update to latest release.
-
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.7c-2
-+ Revision: 749686
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.7c-1
-+ Revision: 717932
-- texlive-biblatex-philosophy
-- texlive-biblatex-philosophy
-- texlive-biblatex-philosophy
-- texlive-biblatex-philosophy
-- texlive-biblatex-philosophy
-
+cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
