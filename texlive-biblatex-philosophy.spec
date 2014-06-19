@@ -1,12 +1,12 @@
-# revision 32985
+# revision 33313
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-philosophy
-# catalog-date 2014-02-16 19:29:09 +0100
+# catalog-date 2014-03-28 09:30:53 +0100
 # catalog-license lppl1.3
-# catalog-version 0.9e
+# catalog-version 0.9f
 Name:		texlive-biblatex-philosophy
-Version:	0.9e
-Release:	2
+Version:	0.9f
+Release:	1
 Summary:	Styles for using biblatex for work in philosophy
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-philosophy
