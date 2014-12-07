@@ -6,7 +6,7 @@
 # catalog-version 0.9f
 Name:		texlive-biblatex-philosophy
 Version:	0.9f
-Release:	2
+Release:	3
 Summary:	Styles for using biblatex for work in philosophy
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-philosophy
