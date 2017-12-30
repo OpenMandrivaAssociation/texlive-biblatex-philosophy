@@ -1,12 +1,6 @@
-# revision 33313
-# category Package
-# catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-philosophy
-# catalog-date 2014-03-28 09:30:53 +0100
-# catalog-license lppl1.3
-# catalog-version 0.9f
 Name:		texlive-biblatex-philosophy
-Version:	0.9f
-Release:	4
+Version:	1.9.8
+Release:	1
 Summary:	Styles for using biblatex for work in philosophy
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-philosophy
@@ -40,21 +34,10 @@ some simple redefinitions.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/biblatex-philosophy/english-philosophy.lbx
-%{_texmfdistdir}/tex/latex/biblatex-philosophy/italian-philosophy.lbx
-%{_texmfdistdir}/tex/latex/biblatex-philosophy/philosophy-classic.bbx
-%{_texmfdistdir}/tex/latex/biblatex-philosophy/philosophy-classic.cbx
-%{_texmfdistdir}/tex/latex/biblatex-philosophy/philosophy-modern.bbx
-%{_texmfdistdir}/tex/latex/biblatex-philosophy/philosophy-modern.cbx
-%{_texmfdistdir}/tex/latex/biblatex-philosophy/philosophy-standard.bbx
-%{_texmfdistdir}/tex/latex/biblatex-philosophy/philosophy-verbose.bbx
-%{_texmfdistdir}/tex/latex/biblatex-philosophy/philosophy-verbose.cbx
-%doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/README
-%doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/biblatex-philosophy.pdf
-%doc %{_texmfdistdir}/doc/latex/biblatex-philosophy/examples.zip
+%{_texmfdistdir}/tex/latex/biblatex-philosophy
+%doc %{_texmfdistdir}/doc/latex/biblatex-philosophy
 #- source
-%doc %{_texmfdistdir}/source/latex/biblatex-philosophy/biblatex-philosophy.bib
-%doc %{_texmfdistdir}/source/latex/biblatex-philosophy/biblatex-philosophy.dtx
+%doc %{_texmfdistdir}/source/latex/biblatex-philosophy
 
 #-----------------------------------------------------------------------
 %prep
