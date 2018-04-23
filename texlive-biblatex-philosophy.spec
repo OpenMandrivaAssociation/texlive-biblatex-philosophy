@@ -1,5 +1,5 @@
 Name:		texlive-biblatex-philosophy
-Version:	1.9.8
+Version:	1.9.8a
 Release:	1
 Summary:	Styles for using biblatex for work in philosophy
 Group:		Publishing
