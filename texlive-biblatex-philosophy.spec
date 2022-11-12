@@ -5,9 +5,9 @@ Summary:	Styles for using biblatex for work in philosophy
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-philosophy
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-philosophy.r64414.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-philosophy.doc.r64414.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-philosophy.source.r64414.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-philosophy.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-philosophy.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-philosophy.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
