@@ -1,6 +1,6 @@
 Name:		texlive-biblatex-philosophy
 Version:	64414
-Release:	1
+Release:	2
 Summary:	Styles for using biblatex for work in philosophy
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-philosophy
